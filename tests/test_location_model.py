@@ -1,8 +1,8 @@
 import pytest
 from django.db.models import BooleanField, CharField, DateTimeField
 
+# Оставляем короткий импорт
 from blog.models import Location
-from tests.conftest import _TestModelAttrs
 
 
 @pytest.mark.parametrize(('field', 'type', 'params'), [
